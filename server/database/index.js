@@ -2,7 +2,10 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-mongoose.connect('mongodb://localhost/beta', {
+const URI = require('../../config/keys').mongoURI;
+
+// mongoose.connect('mongodb://localhost/beta', {
+mongoose.connect(URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
