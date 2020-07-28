@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  background-color: #646c83;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-body {
+  text-align: left;
+}
+
+.edit-btn {
+  margin-right: 0.5rem;
+}
+
+.remove-btn {
+  float: right
+}
