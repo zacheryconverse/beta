@@ -10,6 +10,7 @@ import store from './store';
 import ItemModal from './components/ItemModal';
 import { Container } from 'reactstrap';
 import { loadUser } from './actions/authActions';
+import { ReactComponent as Logo } from './mountains.svg';
 
 class App extends Component {
   constructor(props) {

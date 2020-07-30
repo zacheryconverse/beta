@@ -13,7 +13,7 @@ function RegisterForm(props) {
       [id]: value,
     }));
   };
-
+  
   return (
     <div className="card co-12 col-lg-4 login-card mt-2 hv-center">
       <form>
@@ -42,12 +42,7 @@ function RegisterForm(props) {
         </div>
         <div className="form-group text-left">
           <label htmlFor="examplePassword1">Confirm Password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="password"
-            placeholder="Password"
-          />
+          <input type="password" className="form-control" id="password" placeholder="Password" />
         </div>
         <button type="submit" className="btn btn-primary">
           Register
