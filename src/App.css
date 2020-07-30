@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #646c83;
 }
 
 .App-logo {
@@ -8,14 +7,26 @@
   pointer-events: none;
 }
 
-.App-body {
-  text-align: left;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.edit-btn {
-  margin-right: 0.5rem;
+.App-link {
+  color: #61dafb;
 }
 
-.remove-btn {
-  float: right
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
