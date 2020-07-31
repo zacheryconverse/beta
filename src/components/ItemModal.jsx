@@ -42,7 +42,7 @@ class ItemModal extends Component {
       <div>
         { isAuthenticated ? <Button color="dark" style={{ marginTop: '2rem' }} onClick={this.toggle}>
           Add a Move
-        </Button> : <h4 className="mb-3 ml-4">View | Share | Create</h4> }
+        </Button> : <h4 className="mb-3 ml-4">Login to - View | Share | Create</h4> }
 
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>Move Details</ModalHeader>

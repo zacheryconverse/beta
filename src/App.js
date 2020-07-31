@@ -8,6 +8,7 @@ import store from './store';
 import ItemModal from './components/ItemModal';
 import { Container } from 'reactstrap';
 import { loadUser } from './actions/authActions';
+import Footer from './components/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -33,6 +34,7 @@ class App extends Component {
               <img src={logo} className="App-logo" alt="logo" />
             </Container>
           </div>
+          <Footer />
         </div>
       </Provider>
     );
