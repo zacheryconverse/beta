@@ -37,11 +37,12 @@ class ItemModal extends Component {
   };
 
   render() {
+    const { isAuthenticated } = this.props;
     return (
       <div>
-        { this.props.isAuthenticated ? <Button color="dark" style={{ marginTop: '2rem' }} onClick={this.toggle}>
+        { isAuthenticated ? <Button color="dark" style={{ marginTop: '2rem' }} onClick={this.toggle}>
           Add a Move
-        </Button> : <h4 className="mb-3 ml-4">Please log in to manage Beta</h4> }
+        </Button> : <h4 className="mb-3 ml-4">View | Share | Create</h4> }
 
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>Move Details</ModalHeader>
