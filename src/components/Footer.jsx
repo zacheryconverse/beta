@@ -5,7 +5,7 @@ const Footer = (props) => {
   return (
     <div>
       <Card>
-        <CardHeader tag="h3">Featured</CardHeader>
+        <CardHeader tag="h3">CLIMB!</CardHeader>
         <CardBody>
           <CardTitle>Special Title Treatment</CardTitle>
           <CardText>
