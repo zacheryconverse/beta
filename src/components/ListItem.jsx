@@ -1,9 +1,9 @@
-import React from 'react';
+// import React from 'react';
 
-const ListItem = ({ item }) => (
-  <div>
-    {item.moveId}. { item.move }
-  </div>
-)
+// const ListItem = ({ item }) => (
+//   <div>
+//     {item.moveId}. { item.move }
+//   </div>
+// )
 
-export default ListItem;
+// export default ListItem;

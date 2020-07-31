@@ -1,5 +1,5 @@
 // import React, { useState } from 'react';
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 // import ListItem from './ListItem';
 import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { connect } from 'react-redux';
@@ -16,12 +16,19 @@ class List extends Component {
   static propTypes = {
     getItems: PropTypes.func.isRequired,
     item: PropTypes.object.isRequired,
-    isAuthenticated: PropTypes.bool
+    isAuthenticated: PropTypes.bool,
   };
 
   componentDidMount() {
     this.props.getItems();
   }
+
+  // componentDidUpdate(prevProps) {
+  //   const { isAthenticated } = this.props.auth;
+  //   if (isAthenticated !== null) {
+  //     this.props.getItems();
+  //   }
+  // }
 
   onDeleteClick = (id) => {
     this.props.deleteItem(id);
@@ -29,10 +36,11 @@ class List extends Component {
 
   render() {
     const { items } = this.props.item;
-    const { isAuthenticated } = this.props;
-    return (
-      <Container>
-        {isAuthenticated ? (
+    const { isAthenticated } = this.props;
+
+    const listLinks = (
+      <Fragment>
+        <Container>
           <ListGroup>
             <span className="lead">
               <strong>{items ? `This route has ${items.length} moves` : ''}</strong>
@@ -61,9 +69,13 @@ class List extends Component {
               </ListGroupItem>
             ))}
           </ListGroup>
-        ) : (
-          <Logo />
-        )}
+        </Container>
+      </Fragment>
+    );
+
+    return (
+      <Container>
+        {isAthenticated ? listLinks : <Logo />}
       </Container>
     );
   }
@@ -72,56 +84,7 @@ class List extends Component {
 const mapStateToProps = (state) => ({
   item: state.item,
   isAuthenticated: state.auth.isAuthenticated,
+  auth: state.auth,
 });
 
 export default connect(mapStateToProps, { getItems, deleteItem })(List);
-
-//   const handleChange = (e) => {
-//     const { id, value } = e.target;
-//     setState((prevState) => ({
-//       ...prevState,
-//       [id]: [value],
-//     }));
-//   };
-
-//   const handleClick = (e) => {
-//     e.preventDefault();
-//     sendMoveToServer();
-//   }
-
-//   const sendMoveToServer = () => {
-//     if (state.moves.length) {
-//       fetch('/api/moves', ("moves": state.moves))
-//     }
-//   }
-
-//   return (
-//     <div>
-//       <form>
-//         <div className="">
-//           <label></label>
-//           <input
-//             type="move"
-//             className="form-control"
-//             id="move"
-//             aria-describedby="moveHelp"
-//             placeholder="Enter a move"
-//             value={state.move}
-//             onChange={handleChange}
-//           />
-//         </div>
-//         <button type="submit" className="btn btn-primary">
-//           Enter
-//         </button>
-//       </form>
-// This route has
-// {' '}
-// {items.length}
-// {' '}
-// moves.
-//       {items.map((item) => (
-//         <ListItem item={item} />
-//       ))}
-//     </div>
-//   );
-// };
