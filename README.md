@@ -1,3 +1,9 @@
+# Route Beta
+> Route Beta as an app designed for rock climbers to create, view, and share the details (or beta) of every move of a route.
+![Mobile Image](public/RouteBeta.jpg)
+> This app has uses React, NodeJS, Express, MongoDB, Redux, JWT-authentication, Bcrypt, and ReactStrap.
+> Deployed on Heroku @ https://safe-sierra-90220.herokuapp.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -34,17 +40,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
