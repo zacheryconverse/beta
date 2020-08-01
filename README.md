@@ -2,7 +2,7 @@
 > Route Beta as an app designed for rock climbers to create, view, and share the details (or beta) of every move of a route.
 
 ## Create || Read || Update || Delete
-![Mobile Image](public/routebeta.jpg)
+![Mobile Image](public/RouteBeta.jpg)
 
 ## Authentication
 ![Mobile Image](public/beta.jpg)
