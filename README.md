@@ -1,7 +1,21 @@
 # Route Beta
 > Route Beta as an app designed for rock climbers to create, view, and share the details (or beta) of every move of a route.
+
+
 ![Mobile Image](public/RouteBeta.jpg)
-> This app has uses React, NodeJS, Express, MongoDB, Redux, JWT-authentication, Bcrypt, and ReactStrap.
+
+
+> This app was built with:
+* React
+* NodeJS
+* Express
+* MongoDB
+* Redux
+* JWT-authentication
+* Bcrypt
+* ReactStrap
+
+
 > Deployed on Heroku @ https://safe-sierra-90220.herokuapp.com/
 
 ## Available Scripts
