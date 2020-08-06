@@ -7,13 +7,15 @@ const Footer = (props) => {
       <Card>
         <CardHeader tag="h3">CLIMB!</CardHeader>
         <CardBody>
-          <CardTitle>Special Title Treatment</CardTitle>
-          <CardText>
-            With supporting text below as a natural lead-in to additional content.
+          <CardTitle className="h5">Get specific with your beta and never forget a move</CardTitle>
+          <CardText className="lead">
+            Route Beta makes it possible to create, view, and share the details of any climb.
+            Registered users can access available route descriptions or create a new set of moves it
+            takes to reach the top! 
           </CardText>
-          <Button>Go somewhere</Button>
+          <Button href="https://www.linkedin.com/in/zachery-converse/">Contact Me</Button>
         </CardBody>
-        <CardFooter className="text-muted">Footer</CardFooter>
+        <CardFooter className="text-muted">About - Free Stickers - Terms - Privacy</CardFooter>
       </Card>
     </div>
   );

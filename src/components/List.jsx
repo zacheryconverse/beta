@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
 import { ReactComponent as Logo } from '../mountains.svg';
+import logo from '../logo.svg';
 
 // const List = ({ items }) => {
 //   const [state, setState] = useState({
@@ -60,6 +61,7 @@ class List extends Component {
                 </Button>
               </ListGroupItem>
             ))}
+          <img src={logo} className="App-logo ml-0" alt="logo" />
           </ListGroup>
         ) : (
           <Logo />
