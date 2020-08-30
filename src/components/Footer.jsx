@@ -11,7 +11,7 @@ const Footer = (props) => {
           <CardText className="lead">
             Route Beta makes it possible to create, view, and share the details of any climb.
             Registered users can access available route descriptions or create a new set of moves it
-            takes to reach the top! 
+            takes to reach the top!
           </CardText>
           <Button href="https://www.linkedin.com/in/zachery-converse/">Contact Me</Button>
         </CardBody>
@@ -20,5 +20,6 @@ const Footer = (props) => {
     </div>
   );
 };
+// what could I put in the footer?
 
 export default Footer;
