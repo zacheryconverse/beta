@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Redux
 
 function RegisterForm(props) {
   const [state, setState] = useState({
@@ -13,7 +13,7 @@ function RegisterForm(props) {
       [id]: value,
     }));
   };
-  
+
   return (
     <div className="card co-12 col-lg-4 login-card mt-2 hv-center">
       <form>
