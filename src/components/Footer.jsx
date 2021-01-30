@@ -13,9 +13,9 @@ const Footer = (props) => {
             Registered users can access available route descriptions or create a new set of moves it
             takes to reach the top!
           </CardText>
-          <Button href="https://www.linkedin.com/in/zachery-converse/">Contact Me</Button>
+          <Button href="mailto:zacheryconverse@gmail.com">Contact Me</Button>
         </CardBody>
-        <CardFooter className="text-muted">About - Free Stickers - Terms - Privacy</CardFooter>
+        <CardFooter className="text-muted"><a href="zacheryconverse.github.io">About - Free Stickers - Terms - Privacy - </a><a href="mailto:zacheryconverse@gmail.com">zacheryconverse@gmail.com</a></CardFooter>
       </Card>
     </div>
   );
