@@ -3,6 +3,7 @@ import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input } from 'r
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
+import { Fragment } from 'react';
 
 class ItemModal extends Component {
   state = {
@@ -40,9 +41,19 @@ class ItemModal extends Component {
     const { isAuthenticated } = this.props;
     return (
       <div>
-        { isAuthenticated ? <Button color="dark" style={{ marginTop: '2rem' }} onClick={this.toggle}>
-          Add a Move
-        </Button> : <h4 className="my-3 ml-4">Login to - View | Share | Create</h4> }
+        {isAuthenticated ? (
+          <Button color="dark" style={{ marginTop: '2rem' }} onClick={this.toggle}>
+            Add a Move
+          </Button>
+        ) : (
+          <Fragment>
+            <h4 className="my-3 ml-4">Login to - View | Share | Create</h4>
+            <p>
+              Feel free to register with a dummy email or login with - Email: code@gmail.com | Password:
+              12345
+            </p>
+          </Fragment>
+        )}
 
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>Move Details</ModalHeader>
