@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Container, ListGroup, ListGroupItem, Button, Col } from 'reactstrap';
+import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
-import { ReactComponent as Logo } from '../mountains.svg';
+// import { ReactComponent as Logo } from '../mountains.svg';
 import logo from '../logo.svg';
 
 class List extends Component {
@@ -57,9 +57,7 @@ class List extends Component {
           <img src={logo} className="App-logo ml-0" alt="logo" />
           </ListGroup>
         ) : (
-          <Col xs="14" sm="12" md={{ size: 10, offset: 1 }}>
-            <Logo />
-          </Col>
+          ''
         )}
       </Container>
     );
