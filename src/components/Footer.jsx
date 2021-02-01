@@ -1,21 +1,19 @@
 import React from 'react';
-import { Card, Button, CardHeader, CardFooter, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Card, Button, CardHeader, CardFooter, CardBody, CardTitle } from 'reactstrap';
 
 const Footer = (props) => {
   return (
     <div>
       <Card>
-        <CardHeader tag="h3">CLIMB!</CardHeader>
+        <CardHeader tag="h4">Create | View | Share</CardHeader>
         <CardBody>
-          <CardTitle className="h5">Get specific with your beta and never forget a move</CardTitle>
-          <CardText className="lead">
+          <CardTitle className="h5 lead">Get specific with your beta and never forget a move</CardTitle>
+          {/* <CardText>
             Route Beta makes it possible to create, view, and share the details of any climb.
-            Registered users can access available route descriptions or create a new set of moves it
-            takes to reach the top!
-          </CardText>
+          </CardText> */}
           <Button href="mailto:zacheryconverse@gmail.com">Contact Me</Button>
         </CardBody>
-        <CardFooter className="text-muted"><a href="zacheryconverse.github.io">About - Free Stickers - Terms - Privacy - </a><a href="mailto:zacheryconverse@gmail.com">zacheryconverse@gmail.com</a></CardFooter>
+        <CardFooter><a href="zacheryconverse.github.io">About - Free Stickers - Terms - Privacy - </a><a href="mailto:zacheryconverse@gmail.com">zacheryconverse@gmail.com</a></CardFooter>
       </Card>
     </div>
   );

@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-  background-color: #646c83;
+  background-image:
+  linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+  url('https://images.unsplash.com/photo-1516592673884-4a382d1124c2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-repeat: no-repeat;
 }
 
 .App-logo {
@@ -18,4 +21,8 @@
 
 .remove-btn {
   float: right
+}
+
+.Footer {
+  background-color: aquamarine;
 }

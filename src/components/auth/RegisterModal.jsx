@@ -107,17 +107,17 @@ class RegisterModal extends Component {
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="Email"
+                  placeholder="code@gmail.com"
                   className="mb-3"
                   onChange={this.onChange}
                 />
-                
+
                 <Label for="password">Password</Label>
                 <Input
                   type="password"
                   name="password"
                   id="password"
-                  placeholder="Password"
+                  placeholder="12345"
                   className="mb-3"
                   onChange={this.onChange}
                 />

@@ -1,9 +1,23 @@
 import React, { Component } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input } from 'reactstrap';
+import {
+  Button,
+  Card,
+  CardBody,
+  // CardTitle,
+  // CardSubtitle,
+  CardHeader,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  Form,
+  FormGroup,
+  Input,
+} from 'reactstrap';
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
+import { ReactComponent as Logo } from '../mountains.svg';
 
 class ItemModal extends Component {
   state = {
@@ -47,11 +61,19 @@ class ItemModal extends Component {
           </Button>
         ) : (
           <Fragment>
-            <h4 className="my-3 ml-4">Login to - View | Share | Create</h4>
-            <p>
-              Feel free to register with a dummy email or login with - Email: code@gmail.com | Password:
-              12345
-            </p>
+            <Card
+              body
+              inverse
+              style={{
+                background: 'radial-gradient(circle 400px, rgb(166 149 107 / 28%), #9198e500)',
+                borderColor: 'rgb(166, 149, 107)',
+              }}
+            >
+              <CardBody>
+                <Logo />
+              </CardBody>
+              <CardHeader className="h3 lead" style={{ textAlign: 'center' }}>Login or Register to Climb</CardHeader>
+            </Card>
           </Fragment>
         )}
 
