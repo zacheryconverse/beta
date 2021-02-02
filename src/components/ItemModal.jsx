@@ -17,7 +17,8 @@ import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
-import { ReactComponent as Logo } from '../mountains.svg';
+// import { ReactComponent as Logo } from '../mountains.svg';
+
 
 class ItemModal extends Component {
   state = {
@@ -69,10 +70,11 @@ class ItemModal extends Component {
                 borderColor: 'rgb(166, 149, 107)',
               }}
             >
-              <CardBody>
-                <Logo />
+              <CardHeader className="h3 lead text-muted" style={{ textAlign: 'center' }}>Login or Register to Climb</CardHeader>
+              <CardBody style={{ height: '500px'}}>
+                {/* <Logo /> */}
               </CardBody>
-              <CardHeader className="h3 lead" style={{ textAlign: 'center' }}>Login or Register to Climb</CardHeader>
+              {/* <CardHeader className="h3 lead" style={{ textAlign: 'center' }}>Login or Register to Climb</CardHeader> */}
             </Card>
           </Fragment>
         )}
