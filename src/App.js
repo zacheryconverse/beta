@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <Container className='contain'>
-        <Col className="App" xs="14" sm="12" md={{ size: 8, offset: 2 }}>
+        <Col className="App" sm="12" md={{ size: 8, offset: 2 }}>
           <Provider store={store}>
             <div className="App">
               <NavBar />
