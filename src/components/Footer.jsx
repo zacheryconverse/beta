@@ -7,7 +7,7 @@ const Footer = (props) => {
       <Card>
         <CardHeader tag="h4">Create | View | Share</CardHeader>
         <CardBody>
-          <CardTitle className="h5 lead">Get specific with your beta and never forget a move</CardTitle>
+          <CardTitle className="h5 lead">Get specific with your climbing beta and never forget a move</CardTitle>
           {/* <CardText>
             Route Beta makes it possible to create, view, and share the details of any climb.
           </CardText> */}
