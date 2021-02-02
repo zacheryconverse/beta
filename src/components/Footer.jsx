@@ -18,6 +18,5 @@ const Footer = (props) => {
     </div>
   );
 };
-// what could I put in the footer?
 
 export default Footer;
