@@ -7,6 +7,13 @@ import PropTypes from 'prop-types';
 import logo from '../logo.svg';
 
 class List extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      displayMoves: true
+    }
+  }
+
   static propTypes = {
     getItems: PropTypes.func.isRequired,
     item: PropTypes.object.isRequired,
@@ -27,6 +34,7 @@ class List extends Component {
     return (
       <Container>
         {isAuthenticated ? (
+
           <ListGroup>
             <span className="lead">
               <strong>{items ? `This route has ${items.length} moves` : ''}</strong>
