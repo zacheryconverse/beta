@@ -47,13 +47,9 @@ class NavBar extends Component {
         <Navbar color="dark" dark expand="sm" className="mb-5">
           <Container>
             <NavbarBrand href="/">Route Beta</NavbarBrand>
-
-            {/* <NavbarToggler onClick={this.toggle} /> */}
-            {/* <Collapse isOpen={this.state.isOpen} navbar> */}
-              <Nav className="ml-auto" navbar>
-                { isAuthenticated ? authLinks : guestLinks }
-              </Nav>
-            {/* </Collapse> */}
+            <Nav className="ml-auto" navbar>
+              { isAuthenticated ? authLinks : guestLinks }
+            </Nav>
           </Container>
         </Navbar>
       </div>

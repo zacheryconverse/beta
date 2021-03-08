@@ -3,7 +3,6 @@ import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
-// import { ReactComponent as Logo } from '../mountains.svg';
 import logo from '../logo.svg';
 
 class List extends Component {
@@ -37,9 +36,7 @@ class List extends Component {
                   className="edit-btn"
                   color="secondary"
                   size="sm"
-                  onClick={() => {
-                    this.setState((state) => ({}));
-                  }}
+                  onClick={() => this.setState((state) => ({})) }
                 >
                   -
                 </Button>

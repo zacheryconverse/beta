@@ -89,7 +89,6 @@ export const login = ({ email, password }) => (dispatch) => {
     });
 };
 
-
 // Logout user
 export const logout = () => {
   return {

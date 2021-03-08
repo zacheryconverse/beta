@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Redux
+import React, { useState } from 'react';
 
 function RegisterForm(props) {
   const [state, setState] = useState({

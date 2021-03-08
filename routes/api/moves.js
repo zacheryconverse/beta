@@ -4,6 +4,9 @@ const router = express.Router();
 const auth = require('../../middleware/auth');
 const { Item } = require('../../models/Item');
 
+// @route        GET api
+// @description  Get all user
+// @access       Public
 router.get('/', (req, res) => {
   Item.find()
     .sort({ date: -1 })
@@ -43,41 +46,3 @@ router.delete('/:id', auth, (req, res) => {
 });
 
 module.exports = router;
-
-// app.get('/', (req, res) => {
-//   selectAll((err, data) => {
-//     if (err) {
-//       res.sendStatus(500);
-//     } else {
-//       res.json(data);
-//     }
-//   });
-// });
-
-// router.route('/:id').get((req, res) => {
-//   const { id } = req.params;
-//   Item.findById(id, (err, move) => {
-//     res.json(move);
-//   });
-// });
-
-// app.get('/items', (req, res) => {
-//   selectAll((err, data) => {
-//     if (err) {
-//       res.sendStatus(500);
-//     } else {
-//       res.json(data);
-//     }
-//   });
-// });
-
-// app.post('/moves', async (req, res) => {
-//   const { move_id, move_description } = req.body;
-//   const move = { move_id, move_description };
-//   const saveMove = await addMove(move);
-//   try {
-//     res.status(201).json({ saveMove });
-//   } catch (e) {
-//     res.status(400).send('adding new move failed');
-//   }
-// });

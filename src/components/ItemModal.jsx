@@ -17,7 +17,6 @@ import PropTypes from 'prop-types';
 import { Fragment } from 'react';
 import { ReactComponent as Logo } from '../mountains.svg';
 
-
 class ItemModal extends Component {
   state = {
     modal: false,
@@ -29,24 +28,17 @@ class ItemModal extends Component {
   };
 
   toggle = () => {
-    this.setState({
-      modal: !this.state.modal,
-    });
+    this.setState({ modal: !this.state.modal });
   };
 
   onChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState({ name: e.target.value });
   };
 
   onSubmit = (e) => {
     e.preventDefault();
-
-    const newItem = {
-      name: this.state.name,
-    };
-
+    const newItem = { name: this.state.name };
     this.props.addItem(newItem);
-
     this.toggle();
   };
 
@@ -72,7 +64,6 @@ class ItemModal extends Component {
               <CardBody style={{ height: '80vh'}}>
                 <Logo style={{ alignItems: 'flex-end' }}/>
               </CardBody>
-              {/* <CardHeader className="h3 lead" style={{ textAlign: 'center' }}>Login or Register to Climb</CardHeader> */}
             </Card>
           </Fragment>
         )}
@@ -82,7 +73,6 @@ class ItemModal extends Component {
           <ModalBody>
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
-                {/* <Label for="item">Move</Label> */}
                 <Input
                   type="text"
                   name="name"
